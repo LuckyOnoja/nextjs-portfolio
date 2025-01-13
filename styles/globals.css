@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #333;
+    line-height: 1.6;
+  }
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Track (the area the thumb slides within) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #3e3e40; /* Your accent color, purple in this case */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f1f1f1; /* Space between thumb and track */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #28282e; /* Change to a slightly darker purple on hover */
+}
+
+/* Optional: Styling the scrollbar for the horizontal direction */
+::-webkit-scrollbar-horizontal {
+  height: 12px; /* Adjust height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #3a3a40; /* Darken the thumb when clicked */
+}
+
+
+
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+  color: white;
+}
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+

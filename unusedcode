@@ -1,0 +1,49 @@
+  <div className="flex items-center justify-center mt-12 p-4 space-x-12">
+        <div className="hover:scale-105 transform transition-all duration-300">
+          <img
+            src="/luckyb&w.jpg"
+            alt="Lucky B&W"
+            className=" w-52 h-52 object-cover rounded-full shadow-2xl border-4 border-gray-800"
+          />
+        </div>
+        <div className="w-[35vw] flex flex-col items-center justify-center text-white transform hover:scale-105 transition-all duration-300">
+          <h1 className="font-heading text-5xl font-extrabold mb-6 text-center leading-tight tracking-tight">
+            Backend Engineer
+          </h1>
+          <h5 className="font-body text-lg leading-relaxed text-gray-300 w-full text-justify tracking-wide">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            nisi fugiat necessitatibus exercitationem quod modi temporibus quia
+            debitis labore ex. Quaerat assumenda maiores ratione expedita porro
+            dolore obcaecati accusamus blanditiis consectetur natus atque
+            exercitationem ut, consequatur voluptates aliquam repudiandae
+            recusandae officia vero. Blanditiis quibusdam natus maxime aliquam
+            corporis dolorem, nulla dolor debitis iste, ex ducimus!
+          </h5>
+        </div>
+
+        <img
+          src="/dataImg.webp"
+          alt="data img"
+          className=" w-[35vw] h-80 object-cover shadow-2xl  rounded-3xl"
+        />
+      </div>
+
+
+      <div className="flex  mt-12 p-12 space-x-12">
+        <div className="hover:scale-105 transform transition-all duration-300">
+          <img
+            src="/luckyb&w.jpg"
+            alt="Lucky B&W"
+            className="w-52 h-52 object-cover rounded-full shadow-2xl border border-cyan-600"
+            style={{
+              boxShadow: "0 0 20px 10px rgba(8, 91, 156, 0.8)", // Simulating the light effect
+            }}
+          />
+        </div>
+      </div>
+      <div className=" p-8 flex items-center  rounded-lg overflow-hidden">
+        <Spline
+          scene="https://prod.spline.design/AxIqlf3UnpGbg5v2/scene.splinecode"
+          style={{ width: "50%", height: "100%" }}
+        />
+      </div>
