@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -11,13 +10,13 @@ const Navbar = () => {
           className="w-10 h-10 object-cover rounded-full shadow-2xl"
         />
         <div className="flex gap-12 justify-center">
-          <a href="" className="hover:text-primary">
+          <a href="#banner" className="hover:text-primary">
             Home
           </a>
-          <a href="" className="hover:text-primary">
+          <a href="#skills" className="hover:text-primary">
             Skills
           </a>
-          <a href="" className="hover:text-primary">
+          <a href="#projects" className="hover:text-primary">
             Projects
           </a>
         </div>
