@@ -4,7 +4,7 @@ export default function SnakeAnimation() {
   const colors = ["#ffffff", "#e0e0e0", "#a9a9a9", "#707070", "#4a4a4a"];
 
   return (
-    <div className="w-full flex justify-center items-center overflow-hidden">
+    <div className="w-[100vw] flex justify-center items-center overflow-hidden">
       {/* Snake Path */}
       <motion.div
         className="absolute w-[500px] "
