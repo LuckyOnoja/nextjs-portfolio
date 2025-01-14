@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { FaWhatsapp , FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,9 +29,9 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div
-          className={`absolute md:relative top-16 md:top-0 right-4 md:right-0 w-[80vw] md:w-auto flex flex-col md:flex-row gap-6 md:gap-12 justify-center items-center bg-transparent md:bg-none backdrop-blur-md md:backdrop-blur-none p-6 md:p-0 rounded-lg shadow-lg md:shadow-none transition-transform duration-300 ${
+          className={`absolute md:relative top-16 md:top-0 right-4 md:right-0 w-[80vw] md:w-auto flex flex-col md:flex-row gap-6 md:gap-12 justify-center items-center md:bg-none backdrop-blur-md md:backdrop-blur-none p-6 md:p-0 rounded-lg shadow-lg md:shadow-none transition-transform duration-300 ${
             menuOpen ? "translate-y-0" : "-translate-y-[200%]"
-          } md:translate-y-0`}
+          } md:translate-y-0 ${menuOpen ? "bg-zinc-900" : ""}`}
         >
           <a
             href="#banner"
@@ -50,6 +51,31 @@ const Navbar = () => {
           >
             Projects
           </a>
+
+          {/* Social Icons */}
+          <div className="social-icon flex gap-4">
+            <a
+              href="#"
+              className="social-icon-link hover:bg-white hover:text-black"
+              aria-label="Facebook"
+            >
+              <FaWhatsapp  size={20} />
+            </a>
+            <a
+              href="#"
+              className="social-icon-link hover:bg-white hover:text-black"
+              aria-label="Twitter"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href="#"
+              className="social-icon-link hover:bg-white hover:text-black"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </div>

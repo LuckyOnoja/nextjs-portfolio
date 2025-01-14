@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-
 }
 
 /************ Custom Font ************/
@@ -115,6 +114,46 @@ body {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+}
+
+/* Styling the social icon container */
+.social-icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon-link {
+  width: 32px;
+  height: 32px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  transition: #fff 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Adding a hover effect */
+.social-icon-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.social-icon-link::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon-link:hover::before {
+  transform: scale(1);
 }
 
 .skill h2 {
