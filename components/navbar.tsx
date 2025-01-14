@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { FaWhatsapp , FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,9 +21,13 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
-            <AiOutlineClose className="w-8 h-8" />
+            <div className="flex items-center justify-center p-2 rounded-full bg-transparent backdrop-blur-md shadow shadow-gray-700">
+              <AiOutlineClose className="w-6 h-6" />
+            </div>
           ) : (
-            <AiOutlineMenu className="w-8 h-8" />
+            <div className="flex items-center justify-center p-2 rounded-full bg-transparent backdrop-blur-md shadow shadow-gray-700">
+              <AiOutlineMenu className="w-6 h-6" />
+            </div>
           )}
         </button>
 
@@ -51,25 +55,31 @@ const Navbar = () => {
           >
             Projects
           </a>
+          <a
+            href="#contact"
+            className="text-white hover:text-primary transition-colors"
+          >
+            Contact
+          </a>
 
           {/* Social Icons */}
           <div className="social-icon flex gap-4">
             <a
-              href="#"
+              href="http://wa.me/2347042351981"
               className="social-icon-link hover:bg-white hover:text-black"
               aria-label="Facebook"
             >
-              <FaWhatsapp  size={20} />
+              <FaWhatsapp size={20} />
             </a>
             <a
-              href="#"
+              href="https://x.com/luckylkonoja?s=21"
               className="social-icon-link hover:bg-white hover:text-black"
               aria-label="Twitter"
             >
               <FaTwitter size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/lucky-onoja-6926842b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "
               className="social-icon-link hover:bg-white hover:text-black"
               aria-label="LinkedIn"
             >

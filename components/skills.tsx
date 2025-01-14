@@ -30,14 +30,15 @@ const Skills = () => {
     { name: "CSS", icon: <FaCss3Alt size={40} /> },
     { name: "JavaScript", icon: <SiJavascript size={40} /> },
     { name: "TypeScript", icon: <SiTypescript size={40} /> },
+    { name: "React.js", icon: <FaReact size={40} /> },
+    { name: "React.N", icon: <FaReact size={40} /> },
+    { name: "Next.js", icon: <SiNextdotjs size={40} /> },
     { name: "Node.js", icon: <FaNodeJs size={40} /> },
+    { name: "Python", icon: <FaPython size={40} /> },
+    { name: "C++", icon: <SiCplusplus size={40} /> },
     { name: "MongoDB", icon: <SiMongodb size={40} /> },
     { name: "Redis", icon: <SiRedis size={40} /> },
-    { name: "Python", icon: <FaPython size={40} /> },
-    { name: "React.js", icon: <FaReact size={40} /> },
-    { name: "Next.js", icon: <SiNextdotjs size={40} /> },
     { name: "PostgreSQL", icon: <SiPostgresql size={40} /> },
-    { name: "C++", icon: <SiCplusplus size={40} /> },
   ];
 
   return (

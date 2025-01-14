@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import CircularProgress from "./circularProgress";
 
 const skillsGrading = [
-  { name: "Html", percentage: 80 },
-  { name: "Css", percentage: 90 },
-  { name: "JavaScript", percentage: 95 },
-  { name: "TypeScript", percentage: 85 },
-  { name: "React.js", percentage: 95 },
+  { name: "Html", percentage: 98 },
+  { name: "Css", percentage: 98 },
+  { name: "JavaScript", percentage: 98 },
+  { name: "TypeScript", percentage: 92 },
+  { name: "React.js", percentage: 97 },
   { name: "Next.js", percentage: 95 },
   { name: "Node.js", percentage: 98 },
   { name: "MongoDB", percentage: 98 },
@@ -57,7 +57,7 @@ const SkillsGrading = () => {
     <div className="relative flex flex-col items-center justify-center p-8 bg-zinc-900 text-white rounded-xl">
       <div className="relative flex items-center justify-center w-full">
         <button
-          className="absolute left-0 z-10 w-8 h-8  text-white bg-blue-600 rounded-full hover:bg-blue-700"
+          className="absolute left-0 z-10 bg-gradient-to-r from-blue-500 to-indigo-600 w-10 h-10 flex items-center justify-center rounded-full text-white shadow-md hover:from-blue-600 hover:to-indigo-700 focus:ring-4 focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
           onClick={handlePrev}
         >
           &lt;
@@ -86,7 +86,7 @@ const SkillsGrading = () => {
         </div>
 
         <button
-          className="absolute right-0 z-10  w-8 h-8 text-white bg-blue-600 rounded-full hover:bg-blue-700"
+          className=" absolute right-0 z-10   bg-gradient-to-r from-blue-500 to-indigo-600 w-10 h-10 flex items-center justify-center rounded-full text-white shadow-md hover:from-blue-600 hover:to-indigo-700 focus:ring-4 focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
           onClick={handleNext}
         >
           &gt;

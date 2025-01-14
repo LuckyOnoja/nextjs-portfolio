@@ -136,7 +136,7 @@ export default function Projects() {
         <div className="flex justify-between items-center mt-6">
           <button
             onClick={prevSlide}
-            className="bg-blue-600 w-8 h-8 rounded-full text-white hover:bg-blue-700 disabled:opacity-50"
+            className="bg-gradient-to-r from-blue-500 to-indigo-600 w-10 h-10 flex items-center justify-center rounded-full text-white shadow-md hover:from-blue-600 hover:to-indigo-700 focus:ring-4 focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
             disabled={currentSlide === 0}
           >
             &lt;
@@ -144,7 +144,7 @@ export default function Projects() {
 
           <button
             onClick={nextSlide}
-            className="bg-blue-600 w-8 h-8 rounded-full text-white hover:bg-blue-700 disabled:opacity-50"
+            className="bg-gradient-to-r from-blue-500 to-indigo-600 w-10 h-10 flex items-center justify-center rounded-full text-white shadow-md hover:from-blue-600 hover:to-indigo-700 focus:ring-4 focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
             disabled={currentSlide + numOfProjects >= projects.length}
           >
             &gt;

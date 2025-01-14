@@ -17,7 +17,7 @@ const Banner = () => {
             alt="Lucky B&W"
             className="w-52 h-52 object-cover rounded-full shadow-2xl mx-8 "
             style={{
-              boxShadow: "0 0 20px 10px rgba(43, 43, 46, 0.9)", // Simulating the light effect
+              boxShadow: "0 0 20px 10px rgba(43, 43, 46, 0.9)",
             }}
           />
 
@@ -31,10 +31,11 @@ const Banner = () => {
             Lucky LK The Backend Guy
           </h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            I'm Lucky Onoja, but you can call me Lucky LK The Backend Guy. I
+            specialize in crafting websites, mobile apps, and integrating AI
+            models while managing databases. With expertise in HTML, CSS,
+            JavaScript, TypeScript, React JS, Node JS, Python, Redis,
+            PostgreSQL, and C++.
           </p>
         </div>
       </div>
