@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { FaWhatsapp, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp, FaTwitter, FaLinkedin , FaGithub} from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -84,6 +84,13 @@ const Navbar = () => {
               aria-label="LinkedIn"
             >
               <FaLinkedin size={20} />
+            </a>
+            <a
+              href="https://github.com/LuckyOnoja"
+              className="social-icon-link hover:bg-white hover:text-black"
+              aria-label="Twitter"
+            >
+              <FaGithub size={20} />
             </a>
           </div>
         </div>

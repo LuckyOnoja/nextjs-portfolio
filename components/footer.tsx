@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -10,7 +10,8 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-blue-500 mb-4">About Me</h3>
             <p className="text-zinc-400">
               I'm a passionate full-stack developer specializing in creating
-              modern web and mobile applications. Let's build something amazing together!
+              modern web and mobile applications. Let's build something amazing
+              together!
             </p>
           </div>
 
@@ -85,6 +86,13 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <FaLinkedin size={20} />
+              </a>
+              <a
+                href="https://github.com/LuckyOnoja"
+                className="social-icon-link hover:bg-white hover:text-black"
+                aria-label="Twitter"
+              >
+                <FaGithub size={20} />
               </a>
             </div>
           </div>
