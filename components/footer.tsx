@@ -48,7 +48,7 @@ export default function Footer() {
               <button
                 onClick={() =>
                   window.open(
-                    "/LUCKY-CV-DECEMBER.docx",
+                    "/LUCKY-CV-JANUARY.docx",
                     "_blank",
                     "noopener,noreferrer"
                   )
