@@ -1,46 +1,55 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const projects = [
   {
-    name: "Project One",
-    description: "A brief description of Project One.",
+    name: "Web3-python-api",
+    description: "A Web 3 API!",
     image: "/projects/1.jpg",
+    link: "https://github.com/LuckyOnoja/web3-python-api",
   },
   {
-    name: "Project Two",
-    description: "A brief description of Project Two.",
+    name: "Realtime-Chat-App-Api",
+    description: "A Realtime Chat App , built with nodejs.",
     image: "/projects/2.jpg",
+    link: "https://github.com/LuckyOnoja/Realtime-Chat-App-Api",
   },
   {
-    name: "Project Three",
-    description: "A brief description of Project Three.",
+    name: "Hospital_dm_server",
+    description: "This is a Data Management system for hospitals.",
     image: "/projects/3.jpg",
+    link: "https://github.com/LuckyOnoja/hospital_dm_server",
   },
   {
-    name: "Project Four",
-    description: "A brief description of Project Four.",
+    name: "Social_app_server ",
+    description: "Server for a social app.",
     image: "/projects/4.jpg",
+    link: "https://github.com/LuckyOnoja/social_app_server",
   },
   {
-    name: "Project Five",
-    description: "A brief description of Project Five.",
+    name: "Ccp-server",
+    description: "SERVER SIDE FOR COURSE CAREER PATH.",
     image: "/projects/5.jpg",
+    link: "https://github.com/LuckyOnoja/ccp-server",
   },
   {
-    name: "Project Six",
-    description: "A brief description of Project Six.",
+    name: "Aora",
+    description: "A React Native app for watching AI videos.",
     image: "/projects/6.jpg",
+    link: "https://github.com/LuckyOnoja/aora_luckyLk_project",
   },
   {
-    name: "Project Seven",
-    description: "A brief description of Project Seven.",
+    name: "MONEYMIND-CLIENT",
+    description: "A Finanace guide built with react native.",
     image: "/projects/7.jpg",
+    link: "https://github.com/LuckyOnoja/MONEYMIND-CLIENT",
   },
   {
-    name: "Project Eight",
-    description: "A brief description of Project Eight.",
+    name: "AAFXINVESTMENT",
+    description: "an investment platform.",
     image: "/projects/8.jpg",
+    link: "https://github.com/LuckyOnoja/AAFXINVESTMENT",
   },
 ];
 
@@ -121,12 +130,14 @@ export default function Projects() {
 
               {/* Hover Effect and Text */}
               <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 group-hover:backdrop-blur-lg group-hover:bg-blue-900/10 transition-all ease-in-out duration-500">
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-10 group-hover:translate-y-0 transition-all duration-500 ease-out flex justify-center items-center w-full h-full">
-                  <div className="text-white text-center px-6 py-4">
-                    <h3 className="text-2xl font-semibold">{project.name}</h3>
-                    <p className="text-sm mt-2">{project.description}</p>
+                <Link href={`${project.link}`}>
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-10 group-hover:translate-y-0 transition-all duration-500 ease-out flex justify-center items-center w-full h-full">
+                    <div className="text-white text-center px-6 py-4">
+                      <h3 className="text-2xl font-semibold">{project.name}</h3>
+                      <p className="text-sm mt-2">{project.description}</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </motion.div>
           ))}
